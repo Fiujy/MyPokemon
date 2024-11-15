@@ -20,7 +20,7 @@ const Table: React.FC<TableProps> = ({ pokemons, onShow, onEdit, onDelete }) => 
         </tr>
       </thead>
       <tbody>
-        {pokemons.map((pokemon, index) => (
+        {pokemons.map((pokemon) => (
           <tr key={pokemon.id} className="text-center">
             {/* <td className="border p-2">{index + 1}</td> */}
             <td className="border p-2">{pokemon.name}</td>
